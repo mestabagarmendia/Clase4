@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div.A i {
+	font-size: 100px;
+}
+
+div.B i {
+	font-size: 50px;
+}
+
+div.C i {
+	font-size: 75px;
+	position: fixed;
+	left: 100px;
+	top: 50px;
+	animation-direction: reverse;
+}
+div.D i {
+	font-size: 90px;
+	position: fixed;
+	left: 20px;
+	top: 150px;
+}
+
+@keyframes desplazar {
+	0% {
+		color: red;
+		transform: rotate(0deg);
+	}
+	100% {
+		color: blue;
+		transform: rotate(360deg);
+	}
+}
+
+div i{
+
+	animation-name: desplazar;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+}
